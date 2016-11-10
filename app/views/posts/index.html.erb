@@ -7,8 +7,9 @@
 
   Title: <%= p.title %>
   Body: <%= p.body %>
-  Comments: <%= p.comments[0].body %>
   <a href="<%= post_path(p)%>">Show</a>
+  <a href="<%= edit_post_path(p)%>">Edit</a>
+
 
   <%end%>
 

@@ -4,6 +4,9 @@
 
 
 
-    Title: <%= @post.title%>
-    Body: <%= @post.body%>
+    Title: <%= @post.title%><br>
+    Body: <%= @post.body%><br>
+    <% @post.comments.each do |c| %>
+    Comment: <%= c.body %>
+    <%end%>
     <a href="/">back</a>
